@@ -18,3 +18,26 @@ Show the distances between 7 cities in your country.
 ---------
 
 Write a page showing a picture in its original format, and a normalized version of 100x100 along with a thumbnail of 64x64. Use _imagemagick_ to change the size. The original picture shall not be a square. Write the command tha you will have used for your conversions.
+
+Javscript
+=========
+
+01 Resumen de frecuencias
+--------------------------
+
+Dados un número variable de nombres propios (palabras), calcular el numero de aparaciones de cada letra.
+
+```javascript
+function resumen(){
+  var hash = {}
+  // => Analizar n nombres propios
+  hash[letra] = hash[letra] || 0
+  hash[letra]++
+  return hash
+}
+
+resumen("pepe", "maria", "juan")
+
+// => { 'a': 2, 'e',: 2, 'i':1, 'j': 1, 'm': 1, 'n': 1, 'p': 2, 'u':1 }
+
+```
