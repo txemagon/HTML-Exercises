@@ -1,15 +1,30 @@
 
 
+function Vehicle(weight, passengers, max_speed){
+    this.weight = weight
+    this.passengers = passengers
+    this.max_speed = max_speed
+    this.current_speed = 0
+}
+
+Vehicle.prototype.speed_up = function(){
+    this.current_speed++
+}
+
+
+Car.prototype = new Vehicle /* Extender el prototipo */
+Car.prototype.constructor = Car /* Arreglar el constructor */
 function Car(){
-    this.wheels = 4
+    Vehicle.call(this, 4, 5, 200) /* Llamar al constructor de la superclase */
     this.doors  = 5
     this.weight = 2000
     this.payload = 400
-    this.passengers = 5
-    this.max_speed = 200
     this.fuel = ["petrol", "gasoil"] 
     this.engine = "four-stroke reciprocating engine"
 }
+
+var renault = new Car()
+renault.speed_up()
 
 function MotorBike(){
     this.wheels = 2
