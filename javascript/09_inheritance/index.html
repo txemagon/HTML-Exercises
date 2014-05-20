@@ -8,8 +8,8 @@
 
 </head>
 <body>
-  <form action="#" onsubmit="show_vehicle();" >
-    <select id="vehicle" name="">
+  <form action="#">
+    <select id="vehicle" onchange="show_vehicle();" >
         <option value="Car">Coche</option>
         <option value="MotorBike">Moto</option>
         <option value="Ship">Barco</option>
@@ -21,9 +21,10 @@
         <option value="Tricycle">Triciclo</option>
         <option value="Donkey">Burro</option>
     </select>
-    <input type="submit" value="Ver">
   </form>    
+  
   <div id="output">
   </div>
+
 </body>
 </html>
