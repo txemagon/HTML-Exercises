@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script>
+function validate(){
+    var email = document.getElementById("email").value
+    var arroba =email.indexOf('@')
+    if (arroba == -1 )
+	    return false
+    var punto = email.indexOf('.', arroba)
+    if (punto == -1)
+	    return false
+    if (punto == arroba + 1)
+	    return false
+    if (punto == email.length - 1)
+	    return false
+    return true
+
+}
+	</script>
+</head>
+<body>
+    <form action="" onsubmit="validate();">
+	    <input id="email" type="text">
+	    <input type="submit">
+    </form>
+</body>
+</html>
