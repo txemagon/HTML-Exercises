@@ -1,0 +1,34 @@
+div {
+    border: 1px solid black;
+}
+
+#logo{
+    float: left;
+}
+
+#menu li{
+    display: inline-block;
+}
+
+#pancarta {
+    background-color: black;
+    color: grey;
+    text-align: center;
+
+}
+
+#pancarta img{
+    position: relative;
+    top: 1.5ex;
+}
+
+#pagina {
+    width: 1000px;
+    margin: 0 auto 0 auto;
+}
+
+
+.Noticia {
+    width: 300px;
+    display: inline-block;
+}
